@@ -22,7 +22,7 @@ Route::middleware(['auth', 'verified'])
     ->name('admin.')
     ->prefix('admin')
     ->group(function () {
-        Route::get('/index', [DashboardController::class, 'index'])
+        Route::get('/', [DashboardController::class, 'index'])
         ->name('dashboard');
 
         Route::get('/profile', [DashboardController::class, 'profile'])
