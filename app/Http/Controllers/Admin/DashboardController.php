@@ -10,9 +10,7 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $user = Auth::user();
-        return Auth::check();
-       
+        return view('admin.dashboard');
     }
 
     public function profile()
